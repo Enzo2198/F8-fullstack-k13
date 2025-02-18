@@ -1,0 +1,36 @@
+/* Selector theo thẻ (p, h1, div…) */
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    color: #555;
+}
+
+/* Selector theo class (.product-item { }) */
+.product-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Selector theo id (#header { }) */
+#header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Selector con (div > p { }) */
+div > p {
+    color: green;
+}
+
+/* Selector anh chị em (h1 + p { }) */
+h1 + p {
+    color: red;
+}

@@ -1,0 +1,44 @@
+.container{
+    background-color: #334456;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+}
+
+.text strong{
+    color: orange;
+}
+
+p{
+    line-height: 1.5em;
+}
+
+.submit{
+    margin-bottom: 5px;
+}
+
+.submit input{
+    padding: 8px 50px 8px 10px;
+}
+
+.submit input:hover{
+    background-color: #ddd;
+}
+
+.submit input:hover::placeholder{
+    color: orange;
+}
+
+.submit button{
+    padding: 8px 20px;
+    background-color: yellow;
+}
+
+.submit button:hover{
+    color: #fff;
+    background-color: orange;
+}
+
+.btn{
+    height: 30px;
+}
