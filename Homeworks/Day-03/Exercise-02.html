@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise-02</title>
+</head>
+<body>
+  <p><b>Bài 2</b></p>
+  <form>
+    <table>
+      <tr>
+        <td><label for="username">Username:</label></td>
+        <td><input id="username" name="fullname" type="text"></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input id="password" name="password" type="password"></td>
+      </tr>
+      <tr>
+        <td><label for="employment">City of <br>Employment:</label></td>
+        <td><input id="employment" name="employment" type="text"></td>
+      </tr>
+      <tr>
+        <td><label for="server">Web server:</label></td>
+        <td>
+          <select id="server" name="sever">
+            <option>-- Choose a server --</option>
+            <option value="server1">Server 1</option>
+            <option value="server2">Server 2</option>
+            <option value="server3">Server 3</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><span>Please specify <br>your role:</span></td>
+        <td>
+          <ul style="list-style-type: none">
+            <li>
+              <input id="admin" type="radio" name="role" value="admin">
+              <label for="admin">Admin</label>
+            </li>
+            <li>
+              <input id="engineer" type="radio" name="role" value="engineer">
+              <label for="engineer">Engineer</label>
+            </li>
+            <li>
+              <input id="manager" type="radio" name="role" value="manager">
+              <label for="manager">Manager</label>
+            </li>
+            <li>
+              <input id="guest" type="radio" name="role" value="guest">
+              <label for="guest">Guest</label>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><span>Single Sign-on <br>the following:</span></td>
+        <td>
+          <ul style="list-style-type: none">
+            <li>
+              <input id="mail" type="checkbox" name="sign-on" value="mail">
+              <label for="mail">Mail</label>
+            </li>
+            <li>
+              <input id="payroll" type="checkbox" name="sign-on" value="payroll">
+              <label for="payroll">Payroll</label>
+            </li>
+            <li>
+              <input id="self" type="checkbox" name="sign-on" value="self">
+              <label for="self">Self-service</label>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td align="right"><button type="submit">Login</button></td>
+        <td><button type="reset">Reset</button></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
