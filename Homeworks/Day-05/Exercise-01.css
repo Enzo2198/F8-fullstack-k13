@@ -1,0 +1,46 @@
+.container {
+    font-family: "arial", sans-serif;
+    font-size: 16px;
+    position: relative;
+}
+
+.header-item {
+    color: #fff;
+    background-color: #D95A25;
+    padding: 10px;
+}
+
+.header-item label {
+    cursor: pointer;
+}
+
+/* Ẩn/hiện icon +/- */
+.icon-main::before {
+    content: "\fe62";
+}
+
+input[type="checkbox"]:checked ~ .header-item .icon-main::before {
+    content: "\fe63";
+}
+
+/* Ẩn/hiện main-content */
+.content-item {
+    display: none;
+    padding: 10px;
+    line-height: 1.2;
+}
+
+input[type="checkbox"]:checked ~ .content-item {
+    display: block;
+}d
+
+/* Content */
+.content-item p {
+    margin: 0;
+}
+
+.content-item ol {
+    margin: 0;
+    padding-left: 18px;
+}
+
