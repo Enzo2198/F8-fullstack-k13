@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise-01</title>
+    <link rel="stylesheet" href="Exercise-01.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container f--lato ma-auto">
+        <!-- Header -->
+        <h1 class="header-item f--lobster">Hey there</h1>
+
+        <!-- Body -->
+        <span class="title-item fs--12 mt--20 d-inline-block"><span class="ED5D54--text">We'd like to hear form you.</span>Send us your message or just say hy with our contact form or directly via phone, we love to chat.</span>
+
+        <!-- Name input -->
+        <div class="input">
+            <div class="input-items mt--20 d-flex">
+                <div class="mdi mdi-account name-icon gray--bg white--text pa--5-7 fs--22"></div>
+                <input class="ml--12" name="name" type="text" placeholder="Your name" required>
+                <div class="mdi mdi-star star-icon gray--text pa--12 fs--12"></div>
+                <div class="mdi mdi-close star-icon gray--text pa--12 fs--12"></div>
+            </div>
+            <div class="input-noti-items">
+                <div class="noti-input bg--333 white--text fs--12 pa--8">Enter your name</div>
+                <div class="nav-down-icon"></div>
+            </div>
+        </div>
+
+        <!-- Email input -->
+        <div class="input">
+            <div class="input-items mt--20 d-flex">
+                <div class="mdi mdi-email name-icon gray--bg white--text pa--5-7 fs--22"></div>
+                <input class="ml--12" name="email" type="email" placeholder="your@domain.com" required>
+                <div class="mdi mdi-star star-icon gray--text pa--12 fs--12"></div>
+                <div class="mdi mdi-close star-icon gray--text pa--12 fs--12"></div>
+            </div>
+            <div class="input-noti-items">
+                <div class="noti-input bg--333 white--text fs--12 pa--8">Enter your email</div>
+                <div class="nav-down-icon"></div>
+            </div>
+        </div>
+
+        <!-- Phone input -->
+        <div class="input">
+            <div class="input-items mt--20 d-flex">
+                <div class="mdi mdi-cellphone name-icon gray--bg white--text pa--5-7 fs--22"></div>
+                <input class="ml--12" name="telephone" type="tel" placeholder="+44 00 123" required>
+            </div>
+            <div class="input-noti-items">
+                <div class="noti-input bg--333 white--text fs--12 pa--8">Enter your phone</div>
+                <div class="nav-down-icon"></div>
+            </div>
+        </div>
+
+        <!-- Subject input -->
+        <div class="input">
+            <div class="input-items mt--20 d-flex">
+                <div class="mdi mdi-wallet name-icon gray--bg white--text pa--5-7 fs--22"></div>
+                <select class="ml--12 bo--0 select-subject" placeholder="Subject">
+                    <option value="0">Subject</option>
+                    <option value="1">Subject 1</option>
+                    <option value="2">Subject 2</option>
+                    <option value="3">Subject 3</option>
+                </select>
+                <div class="mdi mdi-menu-swap star-icon gray--text pa--5-7 fs--22"></div>
+            </div>
+            <div class="input-noti-items">
+                <div class="noti-input bg--333 white--text fs--12 pa--8">Choose your subject</div>
+                <div class="nav-down-icon"></div>
+            </div>
+        </div>
+
+        <!-- Message input -->
+        <div class="input">
+            <div class="input-items mt--20 bo--0 d-flex">
+                <div class="mdi mdi-message name-icon gray--bg white--text pa--9-7 fs--22"></div>
+                <textarea class="pa--12 bo--0" placeholder="Message" rows="10"></textarea>
+                <div class="mdi mdi-star star-icon gray--text pa--12 fs--12"></div>
+                <div class="mdi mdi-close star-icon gray--text pa--12 fs--12"></div>
+            </div>
+            <div class="input-noti-items">
+                <div class="noti-input bg--333 white--text fs--12 pa--8">Enter your message</div>
+                <div class="nav-down-icon"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="fs--12 mt--20 d-flex">
+            <div class="d-flex flex--1">
+                <input class="width--20 mr--8" type="checkbox" name="agree" id="agree">
+                <p class="d-flex al-items--center">Send me a copy of this message</p>
+            </div>
+            <button class="bg--EB3F33 fs--12 pa--7-24 bo--0" type="button">SEND</button>
+        </div>
+    </div>
+</body>
+</html>
