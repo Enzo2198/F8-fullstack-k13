@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-01</title>
+    <link rel="stylesheet" href="Exercise-01.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<!--
+
+                          container              nav
+
+                            ▲                     ▲
+                            │                     │
+                            │                     │
+  ┌─────────────────────────┼────────────────────┬┼┬─────────────────────────────────────────────┐
+  │  ┌────────────────┐               ┌──────────┴┼┴──────────────────────────────────┐          │
+  │  │                │               │ ┌────────┐ ┌─────────┐ ┌─────────┐ ┌────────┐ │          │
+  │  │    Logo        │               │ │ Home   │ │ Product │ │ Contact │ │ About  │ │          │
+  │  │                │               │ └────────┘ └─────────┘ └─────────┘ └────────┘ │          │
+  │  └────────────────┘               └───────────────────────────────────────────────┘          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────┘
+  ┌────────────────────┬──────────────────────┐
+  │┌─────────┐         │            ┌────────┐│
+  ││ Home    │         │            │  Icon  ││
+  │└─────────┘         │            └────────┘│
+  │┌──────────┐        ┼──────────────────────┤
+  ││ Product  │        │                      │
+  │└──────────┘        │                      │
+  │  ┌────────┐        │                      │
+  │  │ Iphone │        │                      │
+  │  └────────┘        │                      │
+  │  ┌─────────┐       │                      │
+  │  │ Samsung │       │                      │
+  │  └─────────┘       │                      │
+  │┌─────────┐         │                      │
+  ││ Contact │         │                      │
+  │└─────────┘         │                      │
+  │┌───────┐           │                      │
+  ││ About │           │                      │
+  │└───────┘           │                      │
+  │                    │                      │
+  │     sub-nav        │                      │
+  │                    │                      │
+  └────────────────────┴──────────────────────┘
+
+-->
+
+    <header class="container">
+        <!-- Logo header -->
+        <img src="https://rainbowit.net/html/histudy/assets/images/logo/logo.png" alt="Study Logo">
+
+        <!-- Navigation -->
+        <div class="container_nav">
+            <ul>
+                <li><a href="#">Home <i class="fa-solid fa-chevron-down"></i></a></li>
+
+                <li><a href="#">Product <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="nav_product">
+                        <li>Iphone</li>
+                        <li>Samsung</li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Contact <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="nav_product">
+                        <li>Contact-1</li>
+                        <li>Contact-2</li>
+                    </ul>
+                </li>
+
+                <li><a href="#">About <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="nav_product">
+                        <li>Info</li>
+                        <li>Setting</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Icon open sub nav -->
+            <label for="container_nav-icon">
+                <i class="fa-solid fa-bars icon"></i>
+            </label>
+        </div>
+    </header>
+
+    <!-- Sub nav -->
+    <input id="container_nav-icon" type="checkbox" hidden>
+    <div class="sub-nav">
+        <ul>
+            <li><a href="#">Home <i class="fa-solid fa-chevron-down"></i></a></li>
+
+            <li><a href="#">Product <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="sub-nav_product">
+                    <li>Iphone</li>
+                    <li>Samsung</li>
+                </ul>
+            </li>
+
+            <li><a href="#">Contact <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="sub-nav_product">
+                    <li>Contact-1</li>
+                    <li>Contact-2</li>
+                </ul>
+            </li>
+
+            <li><a href="#">About <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="sub-nav_product">
+                    <li>Info</li>
+                    <li>Setting</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

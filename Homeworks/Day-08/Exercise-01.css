@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+/* Nav header */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.container img {
+    height: 60px;
+}
+
+.container_nav ul, .container_nav {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin: 8px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 8px;
+}
+
+ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+ul li a i {
+    font-size: 14px;
+}
+
+.container_nav li {
+    display: block;
+    position: relative;
+    margin: 10px;
+}
+
+/* hide/show option nav */
+.container_nav .nav_product {
+    display: none;
+    position: absolute;
+    top: 36px;
+    left: -35px;
+    background-color: rgba(0, 0, 0, 0.1);
+    min-width: 120px;
+    border-radius: 5px;
+}
+
+.container_nav .nav_product:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-style: solid;
+    border-width: 12px 20px;
+    border-color: transparent transparent #E5E5E5 transparent;
+    left: 48px;
+    top: -20px;
+}
+
+.container_nav li a:hover ~ .nav_product {
+    display: block;
+}
+
+/* Hide/show sub nav */
+.container_nav .icon {
+    display: none;
+    padding: 16px;
+    font-size: 18px;
+}
+
+#container_nav-icon:checked ~ .sub-nav {
+    display: block;
+}
+
+/* Responsive*/
+@media screen and (max-width: 600px) {
+    .container_nav .icon {
+        display: block;
+    }
+
+    .container_nav li {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .sub-nav {
+        display: none !important;
+    }
+}
+
+.sub-nav {
+    display: none;
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    background-color: #ccc;
+}
+
+.sub-nav li a {
+    display: block;
+    margin: 10px;
+    font-size: 20px;
+}
+
+/* show more option sub nav */
+.sub-nav .sub-nav_product {
+    position: static;
+}
+
+.sub-nav .sub-nav_product li {
+    display: none;
+    position: relative;
+    width: calc(100% - 54px);
+    padding: 5px;
+    top: -4px;
+    left: 34px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.sub-nav .sub-nav_product li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.sub-nav li a:focus-within ~ .sub-nav_product li {
+    display: block;
+}
