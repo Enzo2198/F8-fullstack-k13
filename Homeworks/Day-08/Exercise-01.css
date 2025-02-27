@@ -60,6 +60,7 @@ ul li a i {
     top: 36px;
     left: -35px;
     background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 6px 2px rgba(60, 64, 67, .1);
     min-width: 120px;
     border-radius: 5px;
 }
