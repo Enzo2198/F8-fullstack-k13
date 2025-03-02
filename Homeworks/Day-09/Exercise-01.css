@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-item {
+    display: flex;
+    height: 56px;
+    padding: 0 16px;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo-header {
+    display: flex;
+}
+
+.logo-header label {
+    font-size: 22px;
+    padding: 8px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.logo-header > a img,
+.logo-side-bar > a img {
+    height: 100%;
+    padding: 14px;
+}
+
+/* Search */
+.search-item {
+    display: flex;
+    min-width: 730px;
+    align-items: center;
+}
+
+.search-box {
+    margin-left: 76px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box div:nth-child(1) {
+    border: 1px solid #7c7366;
+    border-radius: 40px 0 0 40px;
+}
+
+.search-box div:nth-child(1) input {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 12px 16px;
+    font-size: 16px;
+    width: 484px;
+}
+
+.search-box div:nth-child(1) label {
+    padding-right: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-box div:nth-child(2) {
+    font-size: 20px;
+    border: 1px solid;
+    border-color: #7c7366 #7c7366 #7c7366 transparent;
+    border-radius: 0 40px 40px 0;
+    height: 44.5px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-box div:nth-child(2) label {
+    cursor: pointer;
+}
+
+.search-item > label {
+    padding: 0 24px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Operation user */
+.operation-user {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 225px;
+}
+
+.operation-user .create {
+    display: flex;
+    font-size: 20px;
+    margin: 12px 22px;
+    cursor: pointer;
+}
+
+.operation-user .create span {
+    font-size: 16px;
+    align-self: center;
+    margin-left: 6px;
+}
+
+.operation-user > label {
+    font-size: 20px;
+    margin-right: 22px;
+    cursor: pointer;
+}
+
+.operation-user .user-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #7A1FA1;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #7A1FA1;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Side bar */
+.container-side-bar {
+    display: none;
+}
+
+.side-bar {
+    width: 250px;
+    background-color: #e3dee5;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+}
+
+.logo-side-bar {
+    display: flex;
+    margin: 0 34px 0 16px;
+    padding-right: 34px;
+    height: 56px;
+    position: fixed;
+    background-color: #e3dee5;
+}
+
+.side-bar-content {
+    padding-top: 56px;
+}
+
+.logo-side-bar label,
+.side-bar-item i {
+    font-size: 22px;
+    padding: 8px;
+    align-self: center;
+}
+
+.side-bar-lists {
+    padding-bottom: 8px;
+    margin: 8px 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.side-bar-item {
+    flex: 1;
+    padding: 5px;
+}
+
+.side-bar-item:hover {
+    background-color: #bbb7bc;
+    border-radius: 10px;
+}
+
+.side-bar-item i{
+    font-size: 18px;
+}
+
+.side-bar-item span {
+    padding: 14px;
+    font-size: 14px;
+}
+
+.my-channel span {
+    font-size: 16px;
+    padding-left: 6px;
+}
+
+.my-channel i {
+    font-size: 18px;
+    padding-left: 0;
+}
+
+#show-side-bar:checked ~ .container-side-bar {
+    display: flex;
+}
+
+/* Dialog */
+.overlay {
+    display: none;
+    background-color: #ccc;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+.dialog {
+    background-color: #fff;
+    box-shadow: 0 0 10px #727070;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.dialog-header {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #5454e7;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.dialog-header i:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.dialog-header i ~ .overlay {
+    display: none;
+}
+
+.dialog-input {
+    position: relative;
+    margin: 16px;
+}
+
+.dialog-input input {
+    width: 100%;
+    padding: 8px;
+}
+
+.dialog-input input:focus ~ span {
+    top: 1px;
+    font-size: 12px;
+}
+
+.dialog-input span {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    padding: 0 4px;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+.create-btn {
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    width: 100%;
+    margin: auto;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.create-btn:hover {
+    background-color: #ea764a;
+    cursor: pointer;
+}
+
+#show-create:checked ~ .overlay {
+    display: flex;
+}
+
