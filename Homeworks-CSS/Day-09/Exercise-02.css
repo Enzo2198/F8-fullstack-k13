@@ -402,6 +402,8 @@ html {
 
 .body-title {
     font-weight: 700;
+    margin-top: 8px;
+    display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
@@ -466,6 +468,7 @@ html {
 .join-channel .join-btn {
     font-size: 16px;
     background-color: #F2F2F2;
+    margin-right: 8px;
 }
 
 .join-channel .sub-btn {
