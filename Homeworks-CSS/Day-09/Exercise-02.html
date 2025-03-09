@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="Exercise-02.css">
+  <link rel="stylesheet" href="Responsive.css">
+</head>
+<body>
+<!--    Header -->
+  <div class="container-header">
+      <header class="header">
+        <div class="header-item">
+          <!--            Logo -->
+          <div class="logo-header">
+            <!--                <div class="logo-header-icon"><label for="show-side-bar" class="fa-solid fa-bars"></label></div>-->
+            <label for="show-side-bar" class="fa-solid fa-bars logo-header-icon"></label>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/YouTube_Premium_logo.svg/2560px-YouTube_Premium_logo.svg.png" alt="youtube logo" title="Trang chủ Youtube"></a>
+          </div>
+          <!--            Search -->
+          <div class="search-item">
+            <div class="search-box">
+              <div class="search-box-input">
+                <input id="input-search" type="search" name="search" placeholder="Tìm kiếm">
+                <label for="input-search" class="fa-regular fa-keyboard"></label>
+              </div>
+              <div>
+                <label for="input-search" class="fa-solid fa-magnifying-glass"></label>
+              </div>
+            </div>
+            <div class="search-icon-mic">
+              <input id="toggle-mic" type="checkbox" hidden>
+              <label for="toggle-mic"><i class="fa-solid fa-microphone"></i></label>
+            </div>
+          </div>
+          <!--            Operation user-->
+          <div class="operation-user">
+            <div class="create">
+              <label for="show-create" title="Dialog">
+                <i class="fa-solid fa-plus"></i>
+                <span>Tạo</span>
+              </label>
+            </div>
+            <input type="checkbox" id="show-create" hidden>
+
+            <!--                Dialog-->
+            <div class="overlay">
+              <div class="dialog">
+                <div class="dialog-header">
+                  <h2>Create new</h2>
+                  <label for="show-create">
+                    <i class="fa-solid fa-xmark"></i>
+                  </label>
+                </div>
+                <div class="dialog-input">
+                  <input type="text" name="name">
+                  <span>Name</span>
+                </div>
+                <div class="dialog-input">
+                  <input type="text" name="title">
+                  <span>Title</span>
+                </div>
+                <button class="create-btn" type="submit">
+                  <label for="show-create">Create</label>
+                </button>
+              </div>
+            </div>
+            <div class="noti-icon">
+              <input id="noti" type="checkbox" hidden>
+              <label for="noti"><i class="fa-regular fa-bell"></i></label>
+            </div>
+            <div class="user-profile">G</div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Nav-bar -->
+      <input id="show-side-bar" type="checkbox" hidden>
+      <div class="container-side-bar">
+        <div class="side-bar">
+          <div class="logo-side-bar">
+            <label for="show-side-bar" class="fa-solid fa-bars"></label>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/YouTube_Premium_logo.svg/2560px-YouTube_Premium_logo.svg.png" alt="youtube logo" title="Trang chủ Youtube"></a>
+          </div>
+          <div class="side-bar-content">
+            <div class="side-bar-lists">
+              <div class="side-bar-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Trang chủ</span>
+              </div>
+              <div class="side-bar-item">
+                <i class="fa-solid fa-circle-play"></i>
+                <span>Shorts</span>
+              </div>
+              <div class="side-bar-item">
+                <i class="fa-solid fa-money-bill-wave"></i>
+                <span>Kênh đăng ký</span>
+              </div>
+              <div class="side-bar-item">
+                <i class="fa-solid fa-music"></i>
+                <span>Youtube music</span>
+              </div>
+            </div>
+
+            <div class="side-bar-lists">
+              <div class="side-bar-item my-channel">
+                <span><b>Bạn</b></span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="side-bar-item">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span>Video đã xem</span>
+              </div>
+              <div class="side-bar-item">
+                <i class="fa-solid fa-rectangle-list"></i>
+                <span>Danh sách phát</span>
+              </div>
+              <div class="side-bar-item">
+                <i class="fa-solid fa-film"></i>
+                <span>Video của bạn</span>
+              </div>
+              <div class="side-bar-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>Xem sau</span>
+              </div>
+              <div class="side-bar-item">
+                <i class="fa-regular fa-thumbs-up"></i>
+                <span>Video đã thích</span>
+              </div>
+              <div class="side-bar-item">
+                <i class="fa-solid fa-download"></i>
+                <span>Nội dung tải xuống</span>
+              </div>
+            </div>
+
+            <div class="side-bar-lists">
+              <div class="side-bar-item my-channel">
+                <span><b>Bạn</b></span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="side-bar-item">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span>Video đã xem</span>
+              </div>
+              <div class="side-bar-item">
+                <i class="fa-solid fa-rectangle-list"></i>
+                <span>Danh sách phát</span>
+              </div>
+              <div class="side-bar-item">
+                <i class="fa-solid fa-film"></i>
+                <span>Video của bạn</span>
+              </div>
+              <div class="side-bar-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>Xem sau</span>
+              </div>
+              <div class="side-bar-item">
+                <i class="fa-regular fa-thumbs-up"></i>
+                <span>Video đã thích</span>
+              </div>
+              <div class="side-bar-item">
+                <i class="fa-solid fa-download"></i>
+                <span>Nội dung tải xuống</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--    Body -->
+  <div class="container-body">
+    <div class="body-main-content">
+      <div class="body-main-content-lists">
+        <div class="body-video">
+          <!--        <video src="blob:https://www.youtube.com/a19cb919-17a3-4a50-a67d-32b50a342324"></video>-->
+          <img src="https://i.ytimg.com/vi/ru4XjdiCMzs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDVNvI4gX-l9LuB1KqhW6y0KUbu_Q" alt="Study with me">
+        </div>
+        <div class="body-title">
+          <a href="#">2-HOUR STUDY WITH ME | Relaxing Lo-Fi | Rain sound🌧️ | Pomodoro 50/10 | Rainy Day - Spring 2024 🌸</a>
+        </div>
+        <div class="body-info">
+          <div class="info-channel">
+            <div class="channel-logo">
+              <img src="https://yt3.ggpht.com/kQxeVPlRl8_8xcurxe5web2Zdj6WzMrsExLi_5PVpYw5vYY4sPBv1P6OUv3VpiZbGiuF5bx8=s88-c-k-c0x00ffffff-no-rj" alt="Avatar">
+            </div>
+            <div class="channel-content">
+              <a href="#" class="channel-name" title="Carrot TD">Carrot TD</a>
+              <div class="subscriber">
+                <span class="subscribe">111 N người đăng ký</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="interact-channel">
+            <div class="join-channel">
+              <div class="join-btn btn-size">Tham gia</div>
+              <div class="sub-btn btn-size">Đăng ký</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="body-sub-content"></div>
+  </div>
+</body>
+</html>
