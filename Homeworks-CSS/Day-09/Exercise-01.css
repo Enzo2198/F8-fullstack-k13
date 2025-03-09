@@ -518,7 +518,7 @@ html {
     border-radius: 15px;
 }
 
-.body-main-item:hover > img {
+.body-main-item:hover a > img {
     padding: 8px;
 }
 
@@ -533,8 +533,9 @@ html {
 }
 
 .channel-logo {
-    width: 94px;
+    width: 36px;
     margin-right: 16px;
+
 }
 
 .video-name {
