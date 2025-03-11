@@ -3,7 +3,7 @@
 /*
 
   var i, s, num
-  tìm ước của num cộng tổng các ước tìm được
+  tìm ước của num rồi cộng tổng các ước tìm được
                    yes
   s === num + 1  ────────►   là số nguyên tố
       │
@@ -13,8 +13,8 @@
    không là số nguyên tố
 
  */
-var s = 0, num = 3;
-for (var i = 0; i < num ** 0.5; i++){
+var s = 0, num = 25;
+for (var i = 0; i <= num ** 0.5; i++){
     if (num % i === 0 ) {
         s += (i + num/i)
     }
