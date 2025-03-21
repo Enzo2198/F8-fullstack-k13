@@ -157,8 +157,8 @@
     }
 
 /*    Page 2 */
-    .body-sub-content {
-        display: none;
+    .container-body {
+        flex-direction: column;
     }
 
     .body-main-content {
