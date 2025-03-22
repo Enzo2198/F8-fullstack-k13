@@ -42,6 +42,6 @@ const removeItemAfterDelay = (productId, delay, cb) => {
     }
 }
 
-removeItemAfterDelay(2, 1000, (cartUpdatedItem) => {
+removeItemAfterDelay(3, 1000, (cartUpdatedItem) => {
     console.log('Update Cart: ', cartUpdatedItem);
 })
