@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monitor Car</title>
+  <link rel="stylesheet" href="Style.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <div class="side-bar">
+    <header class="side-bar__header">
+      <span class="mdi mdi-stack-overflow logo"></span>
+      <h1>F8 Admin</h1>
+    </header>
+    <div class="side-bar__item">
+      <span>Menu</span>
+    </div>
+    <div class="side-bar__item">
+      <span class="mdi mdi-account"></span>
+      <span>Quản Lý Đơn Hàng</span>
+    </div>
+    <div class="side-bar__item">
+      <!--        parent-->
+      <div class="mainItem">
+        <div>
+          <span class="mdi mdi-account"></span>
+          <span>Quản Lý Xe</span>
+        </div>
+        <span class="mdi mdi-chevron-down"></span>
+      </div>
+      <!--        child -->
+      <div>
+<!--        <input id="toggle" type="checkbox" hidden="hidden">-->
+        <div class="side-bar__item__child">
+          <div class="side-bar__item__child_item">
+            <span class="mdi mdi-account"></span>
+            <span>Quản Lý Xe Máy</span>
+          </div>
+          <div class="side-bar__item__child_item">
+            <span class="mdi mdi-account"></span>
+            <span>Quản Lý Xe Hơi</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="side-bar__item">
+      <span class="mdi mdi-account"></span>
+      <span>Quản Lý Dịch Vụ</span>
+    </div>
+    <div class="side-bar__item">
+      <span class="mdi mdi-account"></span>
+      <span>Cài Đặt Khác</span>
+    </div>
+  </div>
+
+  <div class="body-container">
+    <h2 style="text-align: center">Members</h2>
+    <div class="table">
+      <div class="table-header"></div>
+    </div>
+  </div>
+</div>
+
+<div class="overlay">
+  <div class="dialog">
+    <div class="dialog__header">
+      <div class="dialog__header__title">New member</div>
+      <div class="dialog__header__icon">&times</div>
+    </div>
+    <div class="dialog__body">
+      <div class="dialog__body__input">
+        <input type="text"/>
+        <span>Skill</span>
+        <span class="icon">v</span>
+        <div class="dropdown">
+          <div class="dropdown__item">Python</div>
+          <div class="dropdown__item">JS</div>
+        </div>
+      </div>
+
+      <div class="dialog__body__input">
+        <input type="text"/>
+        <span>Name</span>
+      </div>
+      <div class="dialog__body__input">
+        <input type="text"/>
+        <span>Email</span>
+      </div>
+    </div>
+    <div class="dialog__action">
+      <button>Close</button>
+      <button>Save</button>
+    </div>
+  </div>
+</div>
+
+<script src="Exercise-1.js"></script>
+
+</body>
+</html>
