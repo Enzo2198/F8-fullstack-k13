@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reminders</title>
+</head>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+    }
+
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+
+    .input-container {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    #new-task {
+        flex-grow: 1;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        border-radius: 4px 0 0 4px;
+    }
+
+    #add-btn {
+        padding: 10px 15px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    #add-btn:hover {
+        background-color: #45a049;
+    }
+
+    #task-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .task-item {
+        display: flex;
+        align-items: center;
+        padding: 12px;
+        background-color: white;
+        margin-bottom: 8px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .task-text {
+        flex-grow: 1;
+        margin: 0 10px;
+    }
+
+    .completed {
+        text-decoration: line-through;
+        color: #888;
+    }
+
+    .delete-btn {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .delete-btn:hover {
+        background-color: #d32f2f;
+    }
+</style>
+
+<body>
+    <h1>To Do List</h1>
+
+    <div class="input-container">
+        <input type="text" id="new-task" placeholder="Add note...">
+        <button id="add-btn">Add</button>
+    </div>
+
+    <ul id="task-list"></ul>
+
+<script src="Exercise-1.js"></script>
+</body>
+</html>
