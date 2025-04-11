@@ -13,6 +13,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Add event checkbox and button delete
+    function addEventCheckbox() {
+        const checkbox = taskItem.querySelector('.task-checkbox');
+        const taskTextSpan = taskItem.querySelector('.task-text');
+        const deleteBtn = taskItem.querySelector('.delete-btn');
+
+        checkbox.addEventListener('change', function() {
+            taskTextSpan.classList.toggle('completed', this.checked);
+            saveTasks();
+        });
+
+        deleteBtn.addEventListener('click', function() {
+            taskItem.remove();
+            saveTasks();
+        });
+    }
+
     // Add new to do
     function addTask() {
         const taskText = taskInput.value.trim();
@@ -35,20 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         taskInput.value = '';
 
-        // Add event checkbox and button delete
-        const checkbox = taskItem.querySelector('.task-checkbox');
-        const taskTextSpan = taskItem.querySelector('.task-text');
-        const deleteBtn = taskItem.querySelector('.delete-btn');
+        addEventCheckbox()
 
-        checkbox.addEventListener('change', function() {
-            taskTextSpan.classList.toggle('completed', this.checked);
-            saveTasks();
-        });
-
-        deleteBtn.addEventListener('click', function() {
-            taskItem.remove();
-            saveTasks();
-        });
         saveTasks();
     }
 
@@ -83,20 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 taskList.appendChild(taskItem);
 
-                // Add event checkbox and button delete
-                const checkbox = taskItem.querySelector('.task-checkbox');
-                const taskTextSpan = taskItem.querySelector('.task-text');
-                const deleteBtn = taskItem.querySelector('.delete-btn');
-
-                checkbox.addEventListener('change', function() {
-                    taskTextSpan.classList.toggle('completed', this.checked);
-                    saveTasks();
-                });
-
-                deleteBtn.addEventListener('click', function() {
-                    taskItem.remove();
-                    saveTasks();
-                });
+                addEventCheckbox()
             });
         }
     }
