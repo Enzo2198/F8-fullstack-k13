@@ -5,35 +5,55 @@
     <title>Reminders</title>
 </head>
 <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
     body {
         font-family: 'Arial', sans-serif;
-        max-width: 600px;
+        max-width: 500px;
         margin: 0 auto;
-        padding: 20px;
-        background-color: #f5f5f5;
+        background-color: #2C0098;
+    }
+
+    .container {
+        background: #151533;
+        border-radius: 5px;
+        margin-top: 5rem;
+        padding: 2rem
     }
 
     h1 {
-        color: #333;
+        color: #E8E6E3;
         text-align: center;
+        font-weight: 500;
     }
 
     .input-container {
-        display: flex;
         margin-bottom: 20px;
     }
 
+    .add-todo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 0;
+    }
+
     #new-task {
-        flex-grow: 1;
-        padding: 10px;
-        font-size: 14px;
-        border: 1px solid #ddd;
-        border-radius: 4px 0 0 4px;
+        background: none;
+        border: 1px solid #8758ff;
+        color: #fff;
+        outline: none;
+        padding: 12px;
+        width: 100%;
     }
 
     #add-btn {
-        padding: 10px 15px;
-        background-color: #4CAF50;
+        padding: 12px 20px;
+        background-color: #8758ff;
         color: white;
         border: none;
         border-radius: 0 4px 4px 0;
@@ -54,7 +74,7 @@
         display: flex;
         align-items: center;
         padding: 12px;
-        background-color: white;
+        background-color: #8758ff;
         margin-bottom: 8px;
         border-radius: 4px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -63,14 +83,15 @@
     .task-text {
         flex-grow: 1;
         margin: 0 10px;
+        color: #fff;
     }
 
     .completed {
         text-decoration: line-through;
-        color: #888;
+        color: #363535;
     }
 
-    .delete-btn {
+    .delete-btn, .edit-btn {
         background-color: #f44336;
         color: white;
         border: none;
@@ -79,20 +100,38 @@
         cursor: pointer;
     }
 
-    .delete-btn:hover {
-        background-color: #d32f2f;
+    .edit-btn {
+        background-color: #4CAF50;
+        margin-right: 6px;
+    }
+
+    .delete-btn:hover, .edit-btn:hover {
+        opacity: 0.8;
+    }
+
+    .edit-input {
+        background: none;
+        border: 1px solid #8758ff;
+        color: #fff;
+        outline: none;
+        margin: 0 10px;
+        width: 100%;
+        font-size: 16px;
     }
 </style>
 
 <body>
-    <h1>To Do List</h1>
+    <div class="container">
+        <h1>To Do List</h1>
+        <div class="input-container">
+            <div class="add-todo">
+                <input type="text" id="new-task" placeholder="Add note...">
+                <button id="add-btn" type="submit">Add</button>
+            </div>
 
-    <div class="input-container">
-        <input type="text" id="new-task" placeholder="Add note...">
-        <button id="add-btn">Add</button>
+            <div id="task-list"></div>
+        </div>
     </div>
-
-    <ul id="task-list"></ul>
 
 <script src="Exercise-1.js"></script>
 </body>
