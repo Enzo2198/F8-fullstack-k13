@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 localStorage.setItem('detail', inPage());
         }
         newToken();
+        inPage()
     } else {
         inPage();
     }
