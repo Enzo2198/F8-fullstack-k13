@@ -33,23 +33,4 @@ document.addEventListener("DOMContentLoaded", () => {
     btnSubmit.addEventListener("click", onSave);
     formSubmit.addEventListener("submit", onSave);
 
-    // // Get post
-    // const inPage = async (event) => {
-    //     const page = await getPageLogin('post');
-    //     localStorage.setItem('detail', page.detail);
-    // }
-    // inPage();
-    //
-    // // Get New Token
-    // const newToken = async (event) => {
-    //     if (localStorage.getItem('detail')) {
-    //         const body = {
-    //             refresh: localStorage.getItem("refresh")
-    //         }
-    //         const refreshToken = await getNewToken('login/get_new_token/', body);
-    //         localStorage.setItem('access', refreshToken.access)
-    //         console.log(refreshToken.access);
-    //     }
-    // }
-    // newToken();
 });
