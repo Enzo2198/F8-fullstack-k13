@@ -13,9 +13,11 @@ const getToken = async (endPoint, payload) => {
         return
     }
     else {
+        const saveToken = await response.json();
+        localStorage.setItem('access', saveToken.access)
+        localStorage.setItem('refresh', saveToken.refresh)
         window.location.href = './Page_login.html'
     }
-    return await response.json();
 }
 
 const getNewToken = async (endPoint, payload) => {

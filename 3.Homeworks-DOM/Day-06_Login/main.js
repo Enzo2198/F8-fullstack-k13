@@ -23,10 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             email: emailValue.trim(),
             password: passwordValue,
         }
-        const tokenResponse = await getToken('login', body);
-        localStorage.setItem('access', tokenResponse.access)
-        console.log(tokenResponse.access);
-        localStorage.setItem('refresh', tokenResponse.refresh)
+        await getToken('login', body);
 
     }
 

@@ -4,13 +4,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // Get post
     const inPage = async () => {
         const page = await getPageLogin('post');
+        if (localStorage['detail'] === 'token expired') {
+            newToken()
+        }
         localStorage.setItem('detail', page.detail);
-        console.log(page)
+
     }
 
     // Get New Token
     if (localStorage['detail'] === 'token expired') {
-        const newToken = async (event) => {
+        async function newToken () {
                 const body = {
                     refresh: localStorage.getItem("refresh")
                 }
