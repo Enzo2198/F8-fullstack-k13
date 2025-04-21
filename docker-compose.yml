@@ -1,0 +1,10 @@
+services:
+  web:
+    container_name: F8-fullstack-k13
+    image: node:22.9.0
+    working_dir: /app/web
+    volumes:
+      - ./4.Homework-React/Day-01_Todo-list:/app/web
+    ports:
+      - '5173:5173'
+    command: ['npm', 'run', 'dev']
