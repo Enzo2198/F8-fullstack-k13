@@ -8,4 +8,5 @@ export default defineConfig({
     host: true,
     port: 5173
   }
+  base: process.env.TODO_LIST || "/F8-fullstack-k13/tree/main/4.Homework-React"
 })
