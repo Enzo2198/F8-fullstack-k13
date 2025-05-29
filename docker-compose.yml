@@ -4,7 +4,7 @@ services:
     image: node:22.9.0
     working_dir: /app/web
     volumes:
-      - ./4.Homework-React/Finally_Project/web:/app/web
+      - ./4.Homework-React/Day-01_Todo-list:/app/web
     ports:
       - '3000:3000'
     command: ['npm', 'run', 'dev']
